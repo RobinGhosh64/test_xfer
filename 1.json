@@ -1,0 +1,22 @@
+{
+  "name": "poc",
+  "version": "1.0.0",
+  "description": "poc",
+  "main": "charles.js",
+  "scripts": {
+    "test": "jasmine-node spec",
+    "start": "node server.js"
+  },
+  "author": "pl",
+  "license": "ISC",
+  "dependencies": {
+    "aguid": "^1.0.4",
+    "fs": "0.0.1-security",
+    "mongoose": "~4.10.2",
+    "mysql": "^2.11.1"
+  },
+  "engines": {
+    "npm": ">6.4.1",
+    "node": "8.1.4"
+  }
+}
