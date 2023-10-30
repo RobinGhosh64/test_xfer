@@ -1,0 +1,407 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			* {
+			  margin: 0;
+			  padding: 0;
+			}
+		</style>
+	</head>
+	<body marginheight="0" topmargin="0" marginwidth="0" leftmargin="0">
+
+
+		<table width="610"  style="color: #000; background-color: #FFFFFF; font: 12px/18px Helvetica,Arial,Verdana,sans-serif !important;border-top: 5px solid #f0f0f0; margin-top: 10px; vertical-align: middle;" cellpadding="0" cellspacing="0" border="0">
+			<!-- Header (Common) -->
+			<tr>
+				<td background="http://tvh.s3.amazonaws.com/public/email/tropical01/thevacationhub_simple_black_background.png" width="226" height="80" style="background-image: url('http://tvh.s3.amazonaws.com/public/email/tropical01/thevacationhub_simple_black_background.png'); vertical-align: middle;"></td>
+				<td style="vertical-align: middle;">
+					<div style="font-family: Georgia; font-size: 20px;font-weight: normal;margin: 0;padding: 7px 20px 0 0;text-align: right; color: #000000;">Vacation Rental Contract</div>
+					<p style="font-family: Georgia;font-size: 14px;font-style: italic;font-weight: normal;margin: 0 20px 0 0;padding: 0 0 0 0;text-align: right; color: #666666;">$vo.today</p>
+				</td>
+			</tr>
+			<!-- Header (Common) -->
+
+
+			<!-- Body -->
+			<tr>
+			<td colspan="2">
+
+				<table>
+					<tr>
+					<td style="padding: 10px;">
+
+						<!-- Contract -->
+						<p style="margin: 5px 0 20px 0; font-size: 12px;line-height: 18px;">
+
+
+						#if ($vo.booking.listing.listingDetail.condoSsid == 'N')
+
+							Dear $vo.booking.fname,<br />
+
+
+
+We thank you for choosing us, and we are very happy to have you as our guest. Our condo gets excellent reviews and is one of the very best in the area.
+Please look at our reviews and comments <a href="https://www.homeawayconnect.com/guestbook.cfm?pid=271698" style="border-bottom: 1px solid #588EC1;color: #588EC1;text-decoration: none;">https://www.homeawayconnect.com/guestbook.cfm?pid=271698</a> from our past guests.
+	<p style="font-size:12px;line-height:18px;margin:0; padding:0;">
+
+Please find attached the terms and conditions of the rental agreement.
+
+
+<p><b>Instructions to proceed for confirmation:</b></br>
+  <br><font color="red">1. &nbsp;In order to confirm the reservation, a initial deposit of <font color="green">$$vo.booking.deposit20 </font> is required. </font>
+
+  <br><font color="red">2. &nbsp;Please print the bottom part of this email document which is you contract. Then <font color="green">fill</font> and <font color="green">sign the contract.</font></font>
+  <br><font color="red">3. &nbsp;We also need a <font color="green">copy of your drivers license(DL)</font> so we can send your reservation confirmation letter upon receiving the final payment. <font color="black">Your reservation must be made in your legal name and your identification must match the reservation. The only reason we need the DL is to verify that you are atleast 25 years of age, and also to make sure the address on your DL matches with the address in the contract.</font></font>
+  <br><font color="red">4. &nbsp;Someone could book your week so we suggest you to <font color="green">scan the contract and the DL</font> then <font color="green">fax to 1-866-300-3456</font> or <font color="green">send us via email.</font></font>
+<br><font color="black">
+This will at at-least guarantee you that week. We still need the signed contract and copy of your drivers license(DL) send to us via regular mail. If you are not paying us online, make sure you are also sending the deposit check. Address is provided below.
+</font>
+<br><font color="black">
+We accept credit card payments via PayPal, personal or business checks. There is an additional 3% surcharge for credit card payments only on the rental amount. However their is no surcharge for damage deposit payment with credit card. <i>If you wish to pay this amount with credit credit let me know and I will send you the instructions for payment with a credit card.</i> In which case, the damage deposit will be sent to you automatically and refunded next day after you check-out.</font>
+ <br/><b><font color="blue">
+Payment Options:</font></b>
+<br/>
+<b><font color="black">1. By Check: </font></b>
+
+    Total Amount Due: <font color="green" >$$vo.booking.deposit20</font>
+<br>
+    Mailing Address: $vo.ownerDetails.address1
+                              $vo.ownerDetails.city,  $vo.ownerDetails.zip      Check Payable To: $vo.ownerDetails.fname $vo.ownerDetails.lname
+
+
+<br/>
+<b><font color="black">2. By Credit Card: </font></b>
+    Total Amount Due: <font color="green" >$ $vo.booking.deposit20</font>(Rental Amount: $$vo.booking.deposit20 + PayPal Fee: $9.00)
+    Paypal Id: $vo.booking.listing.listingDetail.paypalId
+
+
+
+
+
+
+							<div style="border-top: 1px dotted #CCCCCC; margin: 20px 40px 0pt; padding-bottom: 10px;"></div>
+							<br />
+
+					  #end
+					  #if ($vo.booking.listing.listingDetail.condoSsid == 'Y')
+
+					  		Dear $vo.booking.fname,<br />
+							Now that you have submitted a payment for the $vo.booking.listing.name property
+							you are the current renter of the property for the dates shown below. This email serves as a contract between
+							the owner and you (the renter) and we'd like for you to read it thoroughly, print it, sign it and send a signed copy via
+							<table>
+								<tr>
+								<td>
+									<span style="font-family: Georgia; font-size: 16px; font-weight: normal; margin: 0;color:#666666;">Mail</span><br />
+									<span style="font-weight:bold;">$vo.ownerDetails.fname $vo.ownerDetails.lname</span><br />
+									<span>
+										$vo.ownerDetails.address1 $vo.ownerDetails.address2<br />
+										$vo.ownerDetails.city, $vo.ownerDetails.state $vo.ownerDetails.zip
+									</span>
+								</td>
+
+								<td style="width: 100px; text-align:center;">
+									<span style="">OR</span>
+								</td>
+
+								<td>
+									<span style="font-family: Georgia; font-size: 16px; font-weight: normal; margin: 0;color:#666666;">Email</span><br />
+									<a href="mailto:$vo.booking.listing.condoEmail" style="border-bottom: 1px solid #588EC1;color: #588EC1;text-decoration: none;">$vo.booking.listing.condoEmail</a>
+								</td>
+								</tr>
+							</table>
+
+							<div style="border-top: 1px dotted #CCCCCC; margin: 20px 40px 0pt; padding-bottom: 10px;"></div>
+							<br />
+					  #end
+					  </p>
+
+						<p style="margin: 5px 0 0 !important; padding: 0 !important; color: rgb(153, 153, 153); font-family: Lucida Grande; font-size: 11px; letter-spacing: -0.5px;">RENTAL DETAILS FOR</p>
+						<div style="font-family: Georgia; font-size: 20px; font-weight: normal; margin: 0;">$vo.booking.listing.name</div>
+						<div style="clear: both; color: #666666;font-family: Georgia,'Times New Roman',Times,serif;font-size: 13px;font-style: italic;line-height: 15px;margin: 5px 0 0;">
+							$vo.booking.listing.address1, $vo.booking.listing.city, $vo.booking.listing.state, $vo.booking.listing.zip
+							(<a href="http://maps.google.com/?q=$vo.booking.listing.address1, $vo.booking.listing.city, $vo.booking.listing.state, $vo.booking.listing.zip" style="border-bottom: 1px solid #588EC1;color: #588EC1;text-decoration: none;">map it</a>)
+						</div>
+						<br />
+
+
+						<!-- Quote details -->
+						<div style="border: 1px dotted #CCC; text-align: center; margin: 0px 0 0 !important;padding: 10px !important;">
+
+						<center>
+						<table  width="100%" border="0">
+						<tr>
+
+						<!-- Quote details: left column -->
+						<td width="50%" valign="top">
+						<table>
+								<tr>
+									<th width="100" style="font-size: 12px;line-height: 18px;">Guest name:</th>
+									<td style="text-align: left; font-size: 12px;line-height: 18px;">${vo.booking.fname} ${vo.booking.lname} <small>(${vo.booking.email})</small></td>
+								</tr>
+								<tr>
+									<th style="font-size:12px;line-height:18px;">Check-in:</th>
+									<td style="text-align: left;font-size:12px;line-height:18px;">$vo.checkInDate ${vo.booking.listing.listingDetail.checkIn}</td>
+								</tr>
+								<tr>
+									<th style="font-size:12px;line-height:18px;">Check-out:</th>
+									<td style="text-align: left;font-size:12px;line-height:18px;">$vo.checkOutDate ${vo.booking.listing.listingDetail.checkOut}</td>
+								</tr>
+								<tr>
+									<th style="font-size:12px;line-height:18px;">No. of guests:</th>
+									<td style="text-align: left;font-size:12px;line-height:18px;">$vo.booking.adults + $vo.booking.childrens</td>
+								</tr>
+								<tr>
+									<th style="font-size:12px;line-height:18px;">Accomodation:</th>
+									<td style="text-align: left;font-size:12px;line-height:18px;">$vo.booking.listing.accomodationType</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<div style="width: 250px; padding-top: 10px;">
+											<span style="background-color: #FFFF99; color: #000000; font-style: italic;font-size:12px;line-height:18px;">*The damage deposit charge will be refunded after the trip if no damage has been reported.</span>
+											</div>
+									</td>
+								</tr>
+						</table>
+
+						</td>
+
+						<!-- Quote details: right column -->
+						<td width="50%" valign="top" class="padding-left: 10px !important;">
+						<table>
+								<tr>
+									<th width="130" style="font-size:12px;line-height:18px;">Rental cost:</th>
+									<td style="text-align: left;font-size:12px;line-height:18px;">$number.format("currency",$vo.booking.rentalPrice,$aLocale)</td>
+								</tr>
+								<tr>
+									#if( $vo.booking.taxName != "" )
+									<th style="font-size:12px;line-height:18px;">$vo.booking.taxName (${vo.booking.listing.listingDetail.taxPercent}%):</th>
+									#else
+									<th style="font-size:12px;line-height:18px;">Sales Tax (${vo.booking.listing.listingDetail.taxPercent}%):</th>
+									#end
+									<td style="text-align: left;font-size:12px;line-height:18px;">$number.format("currency",$vo.booking.computedTax,$aLocale)</td>
+								</tr>
+								<tr>
+									
+
+									#if( $vo.booking.cleaningfeeName != "" )
+									<th style="font-size:12px;line-height:18px;">$vo.booking.cleaningfeeName :</th>
+									#else
+									<th style="font-size:12px;line-height:18px;">Cleaning fee:</th>
+									#end
+									<td style="text-align: left;font-size:12px;line-height:18px;">$number.format("currency",$vo.booking.cleaningFee,$aLocale)</td>
+								</tr>
+								<tr>
+									<th style="font-size:12px;line-height:18px;">
+										<hr style="background-color: #FFFFFF;height: 2px;overflow: none;border: none;border-bottom: 1px solid #CCC!important;margin: 3px !important;padding: 0;" />
+										Total charges:
+									</th>
+									<th style="text-align: left;font-size:12px;line-height:18px;">
+										<hr style="background-color: #FFFFFF;height: 2px;overflow: none;border: none;border-bottom: 1px solid #CCC;margin: 3px !important;padding: 0;font-size:12px;line-height:18px;" />
+										$number.format("currency",$vo.booking.totalRentalPrice,$aLocale)</th>
+								</tr>
+								<tr>
+									<th style="font-size:12px;line-height:18px;">+ Damage deposit*:</th>
+									<td style="font-size:12px;line-height:18px;text-align: left;">$number.format("currency",$vo.booking.damageDeposit,$aLocale)</td>
+								</tr>
+								<tr>
+									<th style="font-size:12px;line-height:18px;"><hr style="background-color: #FFFFFF;height: 2px;overflow: none;border: none;border-bottom: 1px solid #CCC;margin: 3px !important;padding: 0;" />Total:</th>
+									<th style="font-size:12px;line-height:18px;"><hr style="font-size:12px;line-height:18px;background-color: #FFFFFF;height: 2px;overflow: none;border: none;border-bottom: 1px solid #CCC;margin: 3px !important;padding: 0;" />
+										#set ($totalPrice = ${vo.booking.totalRentalPrice} + ${vo.booking.damageDeposit})
+										$number.format("currency",$totalPrice,$aLocale)
+									</th>
+								</tr>
+						</table>
+
+						</td>
+						</tr>
+						</table>
+						</center>
+						</div>
+
+
+						<!-- Driving Directions -->
+						<div style="color:#555555;font-family: Georgia; font-size: 20px; font-weight: normal; margin: 20px 0 10px;">Driving Directions</div>
+						#foreach( $direction in $vo.listingDirections)
+							<div style="font-weight: bold; font-size: 12px; margin-top: 15px">$direction.name</div>
+							<p style="font-size:12px;line-height:18px;margin:0;padding:0">$direction.description</p>
+						#end
+						<br />
+
+						<div style="border-top: 1px dotted #CCCCCC; margin: 20px 40px 0pt; padding-bottom: 10px;"></div>
+
+
+						<!-- Rental Policies -->
+						<div style="color:#555555;font-family: Georgia; font-size: 20px; font-weight: normal; margin: 20px 0 10px;">Rental Policies</div>
+						#foreach( $policy in $vo.listingPolicies)
+							<div style="font-weight: bold; font-size: 12px; margin-top: 15px">$policy.name</div>
+							<p style="font-size:12px;line-height:18px;margin:0;padding:0">$policy.description</p>
+						#end
+						<br />
+
+						<div style="border-top: 1px dotted #CCCCCC; margin: 20px 40px 0pt; padding-bottom: 10px;"></div>
+
+
+<!--
+<p>
+
+Important: If expenses are incurred to repair damage, replace missing items, pay for extra cleaning or other violations of the rental policy as a result of your stay,
+by signing this agreement you authorize owner to deduct such fees and expenses from the security deposit.
+For additional costs above the security deposit I hereby give permission to charge my credit card.<p>
+-->
+<br><br>
+
+						<!-- Contract Signature -->
+						<div style="color:#555555;font-family: Georgia; font-size: 20px; font-weight: normal; margin: 10px 0 10px;">Contract Signature</div>
+						<p>By Signing Below, I agree to all terms and conditions of this agreement</p>
+
+						<table width="530">
+
+
+
+						<tr>
+						<td>
+							<table width="100%" border="0" style="margin: 7px 0">
+							<tr>
+								<td width="70"><span style="white-space: nowrap">Full Name (Print)</span></td>
+								<td style="border-bottom: 1px solid #999999;">&nbsp;</td>
+							</tr>
+							</table>
+						</td>
+						</tr>
+
+						<tr>
+						<td>
+							<table width="100%" border="0" style="margin: 7px 0">
+							<tr>
+								<td width="10"><span style="white-space: nowrap">Address</span></td>
+								<td style="border-bottom: 1px solid #999999;">&nbsp;</td>
+							</tr>
+							</table>
+						</td>
+						</tr>
+
+						<tr>
+						<td>
+							<table width="100%" border="0" style="margin: 7px 0">
+							<tr>
+								<td width="10"><span style="white-space: nowrap">City</span></td>
+								<td style="border-bottom: 1px solid #999999;" width="200">&nbsp;</td>
+								<td width="10" style="padding-left: 20px;">State</td>
+								<td style="border-bottom: 1px solid #999999;">&nbsp;</td>
+								<td width="10" style="padding-left: 20px;">Zip</td>
+								<td style="border-bottom: 1px solid #999999;">&nbsp;</td>
+							</tr>
+							</table>
+						</td>
+						</tr>
+
+						<tr>
+						<td>
+							<table width="100%" border="0" style="margin: 7px 0">
+							<tr>
+								<td width="10"><span style="white-space: nowrap">Home Phone</span></td>
+								<td style="border-bottom: 1px solid #999999;" width="200">&nbsp;</td>
+								<td width="10" style="padding-left: 20px;">Cellphone</td>
+								<td style="border-bottom: 1px solid #999999;">&nbsp;</td>
+							</tr>
+							</table>
+						</td>
+						</tr>
+
+						<tr>
+						<td>
+							<table width="100%" border="0" style="margin: 7px 0">
+							<tr>
+								<td width="10"><span style="white-space: nowrap">Number of Adults</span></td>
+								<td style="border-bottom: 1px solid #999999;" width="100">&nbsp;</td>
+								<td width="10" style="padding-left: 20px;"><span style="white-space: nowrap">Number of Children (under the age of 25)</span></td>
+								<td style="border-bottom: 1px solid #999999;">&nbsp;</td>
+							</tr>
+							</table>
+						</td>
+						</tr>
+
+						<tr>
+						<td>
+							<table width="100%" border="0" style="margin: 7px 0">
+							<tr>
+								<td width="10"><span style="white-space: nowrap">Email address</span></td>
+								<td style="border-bottom: 1px solid #999999;">&nbsp;</td>
+							</tr>
+							</table>
+						</td>
+						</tr>
+
+						<tr>
+						<td>
+							<table width="100%" border="0" style="margin: 7px 0">
+							<tr>
+								<td width="10"><span style="white-space: nowrap">Arrival date &amp; time</span></td>
+								<td style="border-bottom: 1px solid #999999;" width="140">&nbsp;</td>
+								<td width="10" style="padding-left: 20px;"><span style="white-space: nowrap">Departure date &amp; time</span></td>
+								<td style="border-bottom: 1px solid #999999;">&nbsp;</td>
+							</tr>
+							</table>
+						</td>
+						</tr>
+
+						<tr><td><br></td></tr>
+						<tr>
+						<td>
+							<table width="100%" border="0" style="margin: 7px 0">
+							<tr>
+								<td width="10">Signature</td>
+								<td style="border-bottom: 1px solid #999999;" width="250">&nbsp;</td>
+								<td width="10" style="padding-left: 20px;">Date</td>
+								<td style="border-bottom: 1px solid #999999;">&nbsp;</td>
+							</tr>
+							</table>
+						</td>
+						</tr>
+
+						<tr><td><br></td></tr>
+
+						</table>
+
+						<div style="border-top: 1px dotted #CCCCCC; margin: 20px 40px 0pt; padding-bottom: 10px;"></div>
+						<br />
+						<p style="font-size:12px;line-height:18px;">Should you have further questions, feel free to drop us a line at <a href="mailto:${vo.booking.listing.user.username}" style="border-bottom: 1px solid #588EC1;color: #588EC1;text-decoration: none;">${vo.booking.listing.user.username}</a><br />
+								Have a great day!
+                 <br /><br />
+                 Regards,
+                 <br />
+                 $vo.ownerDetails.fname
+						</p>
+
+
+						<br />
+						<br />
+
+						<!-- Footer -->
+						<center>
+							 <p><font color="red" size="2">Please do not reply to this email; replies are not monitored.</font></p>
+
+
+						</center>
+
+					</td>
+					</tr>
+				</table>
+
+
+			</td>
+			</tr>
+			<!-- Body -->
+		</table>
+
+
+
+
+
+
+	</body>
+</html>
