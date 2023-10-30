@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			* {
+			  margin: 0;
+			  padding: 0;
+			}
+		</style>
+	</head>
+	<body marginheight="0" topmargin="0" marginwidth="0" leftmargin="0">
+
+
+		<table width="610"  style="color: #000; background-color: #FFFFFF; font: 12px/18px Helvetica,Arial,Verdana,sans-serif !important;border: 0px solid #f0f0f0; margin-top: 10px; vertical-align: middle;margin-left:auto; margin-right:auto;" cellpadding="0" cellspacing="0" border="0">
+			<!-- Header (Common) -->
+			<tr>
+				<td background="http://tvh.s3.amazonaws.com/public/email/tropical01/tvh-tropical-logo.png" width="300" height="80" style="background-image: url('http://tvh.s3.amazonaws.com/public/email/tropical01/tvh-tropical-logo.png'); vertical-align: middle;"></td>
+				<td background="http://tvh.s3.amazonaws.com/public/email/tropical01/tvh-tropical-header-background.png" style="background-image: url('http://tvh.s3.amazonaws.com/public/email/tropical01/tvh-tropical-header-background.png');vertical-align: middle;">
+					<div style="font-family: Georgia; font-size: 20px;font-weight: normal;margin: 0;padding: 7px 20px 0 0;text-align: right; color: #FFF;">Not received your signed Contract</div>
+					<p style="font-family: Georgia;font-size: 14px;font-style: italic;font-weight: normal;margin: 0 20px 0 0;padding: 0 0 0 0;text-align: right; color: #98C5D8;">$vo.today</p>
+				</td>
+			</tr>
+			<!-- Header (Common) -->
+
+
+			<!-- Body -->
+			<tr>
+			<td colspan="2">
+
+				<table>
+					<tr>
+					<td style="padding: 10px;">
+
+
+				<!-- Email contents start here -->
+				<p>
+				<br />
+				<br />
+				Hi ${vo.booking.fname},
+				<br /><br />
+					
+				<p>Just a reminder. We did not receive your signed contract document.  Please sign and send it to us.
+				<br>
+				<br>
+Please Note : Unless we receive the signed contract from you, the reservation is not guaranteed. The days you are interested in may be sold to another family if they submit their paperwork first. We generally try to work with you, but cannot hold the condo for long. Please do not take the risk of losing your vacation stay.</p>
+
+				<br>
+				<p>Thanks so much and once again we appreciate your business.</p>
+				
+				 	      
+				 <p>Should you have further questions, drop us a line at <a href="mailto:$vo.booking.listing.user.username">$vo.booking.listing.user.username</a></p>
+                 <p>Have a great day!</p>
+                 
+                 <p>Sincerely,</p>
+
+
+
+                 <p>$vo.ownerDetails.fname</p>
+                 <br>
+                 
+
+						<!-- Footer -->
+						<center>
+							 <p><font color="red" size="2">Please do not reply to this email; replies are not monitored.</font></p>
+
+
+						</center>
+
+					</td>
+					</tr>
+					<tr>
+						<td class="copy">
+							<center>
+								&copy; 2011 - <strong><a href="http://www.thevacationhub.com">The Vacation Hub</a></strong>
+							</center>
+						</td>
+					</tr>
+				</table>
+
+
+			</td>
+			</tr>
+			<!-- Body -->
+		</table>
+
+
+
+
+
+
+	</body>
+
+
+
+				
