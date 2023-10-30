@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<style type="text/css">
+			* {
+			  margin: 0;
+			  padding: 0;
+			}
+		</style>
+	</head>
+	<body style="margin:0!important;">
+
+	<!-- Container	-->
+	<table width="100%" style="background-color:#F0F0F0;font: 12px/18px Helvetica,Arial,Verdana,sans-serif !important;">
+	<tr>
+	<td>
+
+
+		<!--	Main Content	-->
+		<table width="610" style="color: #666666; background-color: #FFFFFF; font: 12px/18px Helvetica,Arial,Verdana,sans-serif !important;border: 0px solid #f0f0f0; margin-top: 30px; vertical-align: middle;margin-left:auto; margin-right:auto;" cellpadding="0" cellspacing="0" border="0">
+
+			<!-- Header (Common) -->
+			<tr>
+				<td height="80" style="background-color: #404958; vertical-align: middle;border-radius: 5px 0 0 0;">
+					<img src="http://tvh.s3.amazonaws.com/public/email/tropicalsimple/tvh-tropical-logo.png" alt="The Vacation Hub" style="margin-left: 30px;" />
+				</td>
+				<td style="background: #404958 url('http://tvh.s3.amazonaws.com/public/email/tropicalsimple/tvh-tropical-header-background.png');vertical-align: middle; border-radius: 0 5px 0 0;">
+					<div style="font-family: Arial; font-size: 18px;font-weight: normal;margin: 0;padding: 7px 20px 0 0;text-align: right; color: #d5dbe2;">$vo.title</div>
+					<p style="font-family: Arial;font-size: 12px;font-weight: normal;margin: 0 20px 0 0;padding: 0 0 0 0;text-align: right; color: #98C5D8;">$vo.today</p>
+				</td>
+			</tr>
+			<!-- Header (Common) -->
+
+
+			<!-- Body -->
+			<tr>
+			<td colspan="2" style="border-radius: 0 0 5px 5px;">
+			<table>
+			<tr>
+			<td style="padding: 20px;">
+				<!-- \/\/\/\/\/\/\/ Main Content Starts Here \/\/\/\/\/\/\/ -->
+
+				<table width="100%">
+					<tr>
+					<td style="padding: 10px;">
+
+
+						<!-- Welcome to theVacationHub.com -->
+						<div style="font-family: Arial; font-size: 18px; font-weight: normal; margin: 10px 0 10px;color:#000;">
+							Final payment due in 3 days.
+						</div>
+						
+						<div style="font-size:12px;line-height:18px;margin: 7px 0; padding:0;">
+							Hello ${vo.booking.fname}!
+							<br />
+								
+							This email is just a reminder that your final payment of $number.format("currency",$vo.booking.rest80,$aLocale)
+							for your booking at $vo.booking.listing.name ($vo.booking.listing.city, $vo.booking.listing.state)
+							with a check-in/check-out date of $vo.checkInDate - $vo.checkOutDate
+							is coming up and it's due in 3 days.
+							<br />
+							<!-- If you have mailed the payment, please disregard this email. -->
+
+
+							<div style="border-top: 1px dotted #CCCCCC; margin: 20px 40px 0pt; padding-bottom: 10px;"></div>
+	
+							<div style="font-family: Arial; font-size: 18px; font-weight: normal; margin: 20px 0 10px;color:#000;">
+								Complete payment and view booking status
+							</div>
+
+							You can always finalize payment and check the status of your booking below.
+							<br />
+								<p style="padding: 10px 0;"><a href="http://${vo.serverName}/manage/confirmQuote.do?id=${vo.bookingId}&email=${vo.booking.email}" style="border-bottom: none;text-decoration: none;border-bottom: none;text-decoration: none; background-color: #79b440; padding: 10px 20px; border-radius: 7px; color: #FFF;text-shadow: 0 1px 1px #7da064;font-size: 14px;">Pay Now</a></p>
+
+							<br />
+							<br />
+							
+							Should you have further questions, feel free to drop us a line at 
+							<a href="mailto:$vo.booking.listing.user.username" style="color: #404958;">$vo.booking.listing.user.username</a>
+							<br />
+							<br />	
+
+			                 Sincerely,
+						     <br />
+			                 $vo.ownerDetails.fname
+						</div>
+					</td>
+					</tr>
+				</table>				
+				
+				<!-- /\/\/\/\/\/\/\  Main Content Ends Here  /\/\/\/\/\/\/\ -->
+			</td>
+			</tr>
+			</table>
+
+
+			</td>
+			</tr>
+		</table>
+
+
+
+
+		<!-- Footer -->
+		</td>
+		</tr>
+		<tr>
+		<td class="copy">
+		<br />
+		<center>
+		<p style="color: #cd5579;">Please do not reply to this email; replies are not monitored.</p>
+		&copy; <strong><a href="http://www.thevacationhub.com" style="color: #404958; text-decoration: none;">The Vacation Hub</a></strong>
+		</center>
+		<br />
+		</td>
+		</tr>
+		<!-- Footer End -->
+		
+	</table>
+
+</body>
+</html>
+
